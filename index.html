@@ -19,9 +19,9 @@
             guessCount++;
 
             if (guess < randomNumber) {
-                guess = message("Your guess was too low, guess again.");
+                message = "Your guess was too low, guess again.";
             } else if (guess > randomNumber) {
-                guess = message("Your guess was too high, guess again.");
+                message = "Your guess was too high, guess again.";
             } else {
                 prompt(`You guessed it in ${guessCount} guesses!`);
                 break;
