@@ -16,6 +16,14 @@
         while (true) {
             guess = prompt("Guess a Number between 1 and 10.");
             guessCount++;
+
+            if (guess < randomNumber) {
+                guess = prompt("Your guess was too low, guess again.");
+            } else if (guess > randomNumber) {
+                guess = prompt("Your guess was too high, guess again.");
+            } else {
+                prompt(`You guessed it in ${guessCount} guesses!`);
+            }
         }
         
     </script>
