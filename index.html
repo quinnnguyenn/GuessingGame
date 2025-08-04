@@ -8,12 +8,16 @@
 <body>
 
     <script>
-        randomNumber = Math.floor(Math.random() * 10) +1;
+        const randomNumber = Math.floor(Math.random() * 10) +1;
   
         let guessCount = 0;
         let guess;
 
-        guess = prompt("Guess a Number between 1 and 10.");
+        while (true) {
+            guess = prompt("Guess a Number between 1 and 10.");
+            guessCount++;
+        }
+        
     </script>
     
 </body>
